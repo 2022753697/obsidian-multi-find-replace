@@ -1,0 +1,198 @@
+/* src/styles.css */
+.multi-find-replace-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.multi-find-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.multi-find-close {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.multi-find-close:hover {
+  opacity: 1;
+}
+.multi-find-config {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.multi-find-config-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.multi-find-config-header:hover {
+  background-color: var(--background-modifier-hover);
+}
+.multi-find-config-body {
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.multi-find-config-body label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.multi-find-config-body input[type=text] {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+.multi-find-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.multi-find-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.multi-find-error {
+  color: var(--text-error);
+  font-size: 11px;
+  padding: 2px 4px;
+}
+.multi-find-stats {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.multi-find-actions {
+  display: flex;
+  gap: 4px;
+  padding: 6px 12px;
+  flex-wrap: wrap;
+}
+.multi-find-actions button {
+  font-size: 11px;
+  padding: 3px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-secondary);
+  color: var(--text-normal);
+  cursor: pointer;
+}
+.multi-find-actions button:hover {
+  background: var(--background-modifier-hover);
+}
+.multi-find-results {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+.multi-find-file {
+  margin-bottom: 2px;
+}
+.multi-find-file-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.multi-find-file-header:hover {
+  background-color: var(--background-modifier-hover);
+}
+.multi-find-file-name {
+  font-weight: 500;
+}
+.multi-find-toggle {
+  font-size: 10px;
+  width: 12px;
+  text-align: center;
+}
+.multi-find-match {
+  padding: 4px 8px 4px 20px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.multi-find-match:hover {
+  background-color: var(--background-modifier-hover);
+}
+.multi-find-match-actions {
+  display: none;
+}
+.multi-find-match-line {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+.multi-find-context-before,
+.multi-find-context-after {
+  color: var(--text-faint);
+  font-size: 10px;
+  padding: 1px 0;
+}
+.multi-find-match-content {
+  padding: 2px 0;
+  font-family: var(--font-monospace);
+  word-break: break-all;
+}
+.multi-find-highlight {
+  background-color: rgba(255, 165, 0, 0.3);
+  border-radius: 2px;
+}
+.multi-find-match-actions {
+  margin-top: 4px;
+}
+.multi-find-match-actions button {
+  font-size: 10px;
+  padding: 1px 6px;
+  border: none;
+  border-radius: 3px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  cursor: pointer;
+}
+.multi-find-history-btn {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 11px;
+  opacity: 0.7;
+}
+.multi-find-history-btn:hover {
+  opacity: 1;
+}
+.multi-find-history-dropdown {
+  position: absolute;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.multi-find-history-item {
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 11px;
+}
+.multi-find-history-item:hover {
+  background-color: var(--background-modifier-hover);
+}
+.multi-find-config-body select {
+  padding: 2px 4px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 3px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+}

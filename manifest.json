@@ -1,0 +1,9 @@
+{
+  "id": "multi-find-replace",
+  "name": "多文件查找替换",
+  "version": "0.1.0",
+  "minAppVersion": "0.15.0",
+  "description": "多文件查找和替换，支持正则、预览、撤销",
+  "author": "",
+  "isDesktopOnly": false
+}
